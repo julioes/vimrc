@@ -6,6 +6,11 @@ set ts=2 sts=2 sw=2 expandtab
 set number
 
 syntax enable
+
+filetype on
+filetype plugin on
+filetype indent on
+
 if has('gui_running')
   set background=light
 else
@@ -14,8 +19,6 @@ endif
 colorscheme solarized
 
 if has("autocmd")
-
-  filetype on
 
   "Syntax of these languages is fussy over tabs Vs spaces.
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
