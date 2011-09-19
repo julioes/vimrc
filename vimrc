@@ -24,6 +24,9 @@ if has("autocmd")
   autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
   autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
+  autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
+  autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
+
   "Treat .rss files as XML.
   autocmd BufNewFile,BufRead *.rss setfiletype xml
 endif
