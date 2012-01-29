@@ -32,6 +32,10 @@ if has("autocmd")
 
   "Treat .rss files as XML.
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+
+  "Format go files after saving
+  autocmd BufWritePre *.go :silent Fmt
+
 endif
 
 function! Preserve(command)
