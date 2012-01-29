@@ -5,6 +5,9 @@ set ts=2 sts=2 sw=2 expandtab
 
 set number
 
+"Include GO support VIM files.
+set rtp+=$GOROOT/misc/vim
+
 syntax enable
 
 filetype on
