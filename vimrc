@@ -1,5 +1,5 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
 
 set ts=2 sts=2 sw=2 expandtab
 
