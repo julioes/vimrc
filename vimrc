@@ -36,6 +36,11 @@ if has("autocmd")
   "Format go files after saving
   autocmd BufWritePre *.go :silent Fmt
 
+  "Two space indentation for CoffeeScript
+  autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+  "Fold by indentation for CoffeeScript
+  autocmd BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable
+
 endif
 
 function! Preserve(command)
