@@ -1,11 +1,17 @@
 Installation:
 
-    git clone git://github.com/julioes/vimrc.git ~/.vim
+    Windows:     git clone git://github.com/julioes/vimrc.git ~/vimfiles
+    Non-windows: git clone git://github.com/julioes/vimrc.git ~/.vim
 
 Create symlinks:
 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+    Windows:
+        mklink _gvimrc ~/vimfiles/gvimrc
+        mklink _vimrc ~/vimfiles/vimrc
+
+    Non-windows:
+        ln -s ~/.vim/vimrc ~/.vimrc
+        ln -s ~/.vim/gvimrc ~/.gvimrc
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
