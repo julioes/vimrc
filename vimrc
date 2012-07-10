@@ -43,6 +43,8 @@ if has("autocmd")
 
 endif
 
+nnoremap <F3> :NumbersToggle<CR>
+
 function! Preserve(command)
   " Preparation: save last search, and cursor position.
   let _s=@/
