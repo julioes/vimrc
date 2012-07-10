@@ -1,9 +1,22 @@
+filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
+
+set nocompatible
+set modelines=0
 
 set ts=2 sts=2 sw=2 expandtab
 
 set number
+
+set encoding=utf-8
+
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
+nnoremap <leader><space> :noh<cr>
 
 "Include GO support VIM files.
 set rtp+=$GOROOT/misc/vim
