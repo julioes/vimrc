@@ -43,6 +43,9 @@ if has("autocmd")
   autocmd FileType html,htmldjango,jinjahtml,eruby,mako let b:closetag_html_style=1
   autocmd FileType html,xhtml,xml,htmldjango,jinjahtml,eruby,mako source ~/.vim/bundle/closetag/plugin/closetag.vim
 
+  "Treat gradle as groovy
+  autocmd BufNewFile,BufRead *.gradle setfiletype groovy
+
   "Treat .rss files as XML.
   autocmd BufNewFile,BufRead *.rss setfiletype xml
 
