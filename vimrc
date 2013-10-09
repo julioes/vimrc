@@ -17,7 +17,10 @@ set smartcase
 set incsearch
 set showmatch
 set hlsearch
+
+let mapleader = ","
 nnoremap <leader><space> :noh<cr>
+inoremap jj <ESC>
 
 "Include GO support VIM files.
 set rtp+=$GOROOT/misc/vim
