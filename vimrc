@@ -38,6 +38,8 @@ else
 endif
 colorscheme solarized
 
+set spell
+
 if has("autocmd")
 
   "Syntax of these languages is fussy over tabs Vs spaces.
@@ -78,4 +80,8 @@ function! Preserve(command)
 endfunction
 nmap _$ :call Preserve("%s/\\s\\+$//e")<CR>
 nmap _= :call Preserve("normal gg=G")<CR>
+
+" Shortcuts
+nnoremap <leader>f 1z=
+nnoremap <leader>s :set spell!
 
