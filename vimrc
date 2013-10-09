@@ -8,6 +8,7 @@ set modelines=0
 set ts=2 sts=2 sw=2 expandtab
 
 set number
+set relativenumber
 
 set encoding=utf-8
 
