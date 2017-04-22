@@ -49,6 +49,18 @@
 [submodule "bundle/vim-elixir"]
 	path = bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "bundle/vim-codefmt"]
+	path = bundle/vim-codefmt
+	url = https://github.com/google/vim-codefmt.git
+[submodule "bundle/vim-maktaba"]
+	path = bundle/vim-maktaba
+	url = https://github.com/google/vim-maktaba.git
+[submodule "bundle/vim-codefmtlib"]
+	path = bundle/vim-codefmtlib
+	url = https://github.com/google/vim-codefmtlib.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/Dockerfile"]
 	path = bundle/Dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
