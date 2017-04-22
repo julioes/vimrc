@@ -65,6 +65,10 @@ if has("autocmd")
 
 endif
 
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+
 function! Preserve(command)
   " Preparation: save last search, and cursor position.
   let _s=@/
