@@ -25,6 +25,9 @@ inoremap jj <ESC>
 "Include GO support VIM files.
 set rtp+=$GOROOT/misc/vim
 
+let g:airline_powerline_fonts = 1
+set laststatus=2
+
 syntax enable
 
 filetype on
